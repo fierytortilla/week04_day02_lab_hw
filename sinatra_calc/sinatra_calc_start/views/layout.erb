@@ -1,0 +1,19 @@
+<!-- sinatra sees a layout file, so it will take the result.erb code and put it into the layout.erb-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about_us">about_us</a></li>
+      </ul>
+    </nav>
+    <!-- yield says that the html code must give way to whatever sinatra is inputting here from result.erb-->
+    <%= yield %>
+  </body>
+</html>
